@@ -149,10 +149,11 @@ h5 {
     font-family: 'montserratregular';
 }
 h1 {
-    font-size: 3.75rem;
-    line-height: 5.5rem;
+    font-size: 3rem;
+    line-height: 5rem;
     color:#fff;
     letter-spacing: .4rem;
+    text-transform: uppercase;
 }
 h2 {
     font-size:1.875rem;
@@ -161,13 +162,13 @@ h2 {
 
 }
 h3 {
-    font-size:1.375rem;
+    font-size:2rem;
     line-height: 2.5rem;  
     text-transform: uppercase;
 }
 h4 {
     font-size: 1rem;
-    line-height: 2rem;
+    line-height: 1.5rem;
     margin-bottom: 1rem;
     text-transform: uppercase;
 }
@@ -230,8 +231,8 @@ p:last-child {
 Section
 */
 .sections {
-    padding-top:85px;
-    padding-bottom: 105px;
+    padding-top:60px;
+    padding-bottom: 60px;
     overflow: hidden;
 }
 .sections.footer {
@@ -363,9 +364,11 @@ Button
     background-color: #5e9a28;
     border-color: #5e9a28;
 }
-
-
-
+.navbar-fixed-top {
+    background: rgba(47, 46, 46, 0.6);
+}
+.navbar-nav.navbar-right {margin-top: 10px;}
+.menu-scroll .navbar-nav.navbar-right {margin-top: 0px;}
 .btn {
     display: inline-block;
     min-width: 150px;
@@ -375,7 +378,7 @@ Button
     color: #fff;
     letter-spacing: 1px;
     margin: 0;
-    font-size:0.8125rem;
+    font-size:1.25rem;
     border-radius: 0px;
     margin-top: 20px;
     background-color: #ff7200;
@@ -504,7 +507,12 @@ input::-moz-placeholder {
 input::-ms-input-placeholder {
     color: #ddd;
 }
-
+.nave_menu {
+	padding:10px 0;
+}
+.menu-scroll .nave_menu {
+	padding:0;
+}
 .menu-scroll {
     padding-top: 0px;
     padding-bottom: 0px;
@@ -519,7 +527,6 @@ input::-ms-input-placeholder {
     -webkit-transition:all .3s;
     -moz-transition:all .3s;
     transition:all .3s;
-    height: 75px;
 
 }
 
@@ -532,7 +539,7 @@ input::-ms-input-placeholder {
     background-color: transparent; 
     border-color: transparent; 
     transition: all .6s;
-    margin: 8px auto;
+    margin:0;
 }
 .navbar-default .navbar-nav>li>a:hover{
     color:#ff7200;
@@ -546,15 +553,12 @@ input::-ms-input-placeholder {
 
 .main_menu_bg .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus{
     color: #ff7200;
-    padding-bottom: 20px;
     border-bottom: 1px solid #ff7200;
     background: transparent;
 
 }
 
 .main_menu_bg .navbar-nav>li>a {
-    padding-top: 20px;
-    padding-bottom: 20px;
     text-transform: uppercase;
     font-size: 0.875rem;
     color: #fff;
@@ -570,6 +574,23 @@ input::-ms-input-placeholder {
     background-color:transparent;
     color:#f5c239;
 
+}
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+    margin: 0;
+}
+.navbar-brand {
+	background:url("../images/logobig.png") no-repeat 0 0 ;
+    width: 223px;
+    height: 73px;
+	display:inline-block;
+	margin:0;
+}
+.menu-scroll .navbar-brand {
+	background:url("../images/logo1.png") no-repeat 0 0;
+	background-size:60%;
+    width: 60px;
+    height: 48px;
+	display:inline-block;
 }
 .menu-scroll .main_menu_bg .navbar-nav>li>a {
     color: #797979;
@@ -613,7 +634,7 @@ input::-ms-input-placeholder {
 }
 /*heading title all area*/
 .head_title{
-    margin-bottom:90px;
+    margin-bottom:30px;
 }
 .head_title h3{
     color:#413d4b;
@@ -729,7 +750,7 @@ input::-ms-input-placeholder {
     width:100%;
     height: 100%;
 }
-.about .main_about_content .single_about_left_img img{width:70%}
+.about .main_about_content .single_about_left_img img{width:50%}
 
 .about .single_about .single_ab_icon {
     width: 15%;
@@ -768,14 +789,14 @@ input::-ms-input-placeholder {
 .about .single_about .single_ab_text.fullwidth{
     width:100%;
 }
-.about .single_ab_mision li{
+.single_ab_mision li{
     margin-bottom:10px;
 }
 
-/*about_skill_area*/ 
+/*about_skill_area
 .about_skill_area{
     margin-top:75px;
-}
+}*/ 
 
 .about_skill_area .about_tabe .about_tabe_menu li a{
     background: url(../images/skmenubg.png) no-repeat top center;
@@ -804,7 +825,7 @@ input::-ms-input-placeholder {
 }*/
 
 .about_skill_area .tab-content{
-    margin-top:50px;
+    margin-top:20px;
     display: inline-block;
 
 }

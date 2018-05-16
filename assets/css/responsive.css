@@ -14,9 +14,6 @@
         width:195px;
     }
 
-    .about .single_about .single_ab_text {
-        margin-left: 50px;
-    }
 
     .team .single_team_content .single_team_text_overlay .team_overlay_socail a i { 
         width: 22px;
@@ -35,6 +32,40 @@
 
 /* Portrait tablets and small desktops */
 @media (max-width: 991px) {
+	.navbar-collapse {
+    display: none;
+	margin-top:10px;
+}
+	.navbar-nav {
+    margin: 0;
+}
+	.nav>li {
+    border-bottom: 1px solid #fff;
+}
+.nav>li:last-child {
+    border-bottom: 0;
+}
+	.head_title {
+    margin-bottom: 30px;
+}
+.menu-scroll .main_menu_bg .navbar-nav>li>a {
+    color: #fffdfd;
+}
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {margin-left:10px;}
+.about_skill_area {
+    margin-top: 30px;
+}
+.about_skill_area .tab-content {
+    margin-top: 15px;
+    display: inline-block;
+}
+.about .single_about .single_ab_text {
+    margin-left: 0px;
+}
+.sections {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
     html {
         font-size: 90%;
     }
@@ -101,7 +132,7 @@
     }
     .navbar-default .navbar-collapse, .navbar-default .navbar-form {
         border-color: transparent;
-        background-color: rgba(67, 52, 108, 0.5);
+        background-color: rgba(68, 67, 67, 0.5);
         text-align: center;
     }
     .main_menu_bg .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus{
